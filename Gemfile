@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-require 'sinatra'
-require 'json'
-require 'dotenv'
+gem 'sinatra'
+gem 'dotenv'
+gem 'json'
