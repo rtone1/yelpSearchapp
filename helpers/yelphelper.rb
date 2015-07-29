@@ -10,7 +10,7 @@ def yelpSearch
                             })
 
   params = {
-    term: "El Habanero",
+    term: "Saucy Porka",
     category_filter: "restaurants",
     sort: 2
   }
