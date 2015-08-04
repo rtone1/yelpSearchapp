@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<head>
-  <title>search yelp yall</title>
-</head>
-<body>
-  <input type="text" name="name" value="">
-  <input type="button" name="name" value="search">
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>search yelp yall</title>
+    <script type="text/template" id="yelpSearchResults">
+
+    </script>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+  </head>
+  <body>
+    <section>
+      <header>
+        <div class="searchInput">
+          <form class="searchform" >
+            <input class="userSearchInput" type="text" name="lookup" placeholder="search...">
+            <input class="searchSubmit" type="submit"  value="search">
+          </form>
+        </div>
+      </header>
+    </section>
+
+    <script src='/javascripts/lib/jquery.js'></script>
+    <script src='/javascripts/lib/underscore.js'></script>
+    <script src='/javascripts/lib/backbone.js'></script>
+    <script src='/javascripts/app.js'></script>
+  </body>
 </html>

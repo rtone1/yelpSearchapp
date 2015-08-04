@@ -10,5 +10,9 @@ end
 
 get '/api/search-yelp' do
   content_type :json
-  yelpSearch.to_json
+  yelpResults.to_json
+end
+
+post '/api/make-a-search' do
+  yelpSearch(params[:lookup])
 end
