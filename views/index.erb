@@ -4,25 +4,37 @@
     <meta charset="utf-8">
     <title>search yelp yall</title>
     <script type="text/template" id="yelpSearchResults">
-
+      <img class="userpic" src="<%%= image_url %>" alt="yelp image by user"/>
+          <div class="snippet">
+            <h1><%%= name %></h1>
+            <img src="<%%= rating_img_url %>" alt="ratings" />
+            <strong><%%= rating %></strong>
+            <p><%%= snippet_text %></p>
+          </div>
     </script>
     <link rel="stylesheet" href="./stylesheets/styles.css">
   </head>
   <body>
-    <section>
-      <header>
-        <div class="searchInput">
-          <form class="searchform" >
-            <input class="userSearchInput" type="text" name="lookup" placeholder="search...">
-            <input class="searchSubmit" type="submit"  value="search">
-          </form>
-        </div>
-      </header>
-    </section>
+    <header>
+      <div class="searchInput">
+        <form class="searchform" >
+          <input class="userSearchInput" type="text" name="lookup" placeholder="search...">
+          <input class="searchSubmit" type="submit"  value="search">
+        </form>
+      </div>
+    </header>
+    <section class="displayresults">
 
+    </section>
+    <!-- jquery and backbone dependencies -->
     <script src='/javascripts/lib/jquery.js'></script>
     <script src='/javascripts/lib/underscore.js'></script>
     <script src='/javascripts/lib/backbone.js'></script>
+    <!-- backbone scripts -->
+    <script src="/javascripts/models/yelp_models.js"></script>
+    <script src="/javascripts/collections/yelp_collections.js"></script>
+    <script src="/javascripts/views/yelp_views.js"></script>
+    <!-- main script -->
     <script src='/javascripts/app.js'></script>
   </body>
 </html>
